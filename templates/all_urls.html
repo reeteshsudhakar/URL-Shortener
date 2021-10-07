@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block title %}View all URLS{% endblock %}
+{% block content %}
 <br>
 <br>
 <a href="http://shorten-your-url.herokuapp.com/">BACK TO HOME</a>
 <br>
 <br>
-{% block content %}
+
     {% for url in vals %}
         <p><strong>Short: </strong>{{url.short}} <strong>Long:</strong> {{url.long}}</p>
     {% endfor %}
