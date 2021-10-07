@@ -2,6 +2,9 @@
 {% block title %}Short URL{% endblock %}
 
 {% block content %}
-    <h1>http://shorten-your-url.herokuapp.com/{{short_url_display}}</h1>
+    <h1 href="http://shorten-your-url.herokuapp.com/{{short_url_display}}">SHORTENED URL</h1>
+    <a href ="http://shorten-your-url.herokuapp.com/{{short_url_display}}">http://shorten-your-url.herokuapp.com/{{short_url_display}}</a><a>
+    <br>
+    <br>
     <a href="http://shorten-your-url.herokuapp.com/">BACK TO HOME</a>
 {% endblock %}
